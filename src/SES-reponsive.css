@@ -1,0 +1,823 @@
+/* global attributes */
+
+html * {/* Remove browser default padding and margin on all tags */
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family:'Roboto', sans-serif;
+	color:white;
+}
+
+/* sets body width color and centers*/
+#wrapper{
+	width: 100%;
+	max-width: 1024px;
+	min-width: 20em; /*320px*/
+	margin-left:auto;
+	margin-right: auto;
+	background-color: #D0D6E4;
+}
+
+.clear {
+	clear: both;
+}
+header{
+	background-color: #17171c;
+}
+.logo{
+	float: left;
+	width: 80%;
+	height: 12.44em;
+}
+
+.contactus {
+	box-sizing: border-box;
+	float:left;
+	width: 20%;
+	height: 12.44em;
+	padding-top: 4.8em;
+	padding-right:	0.75em;
+	background-color: #17171c;
+	font-size: 1em;
+}
+.contactus h3 {
+	font-family: 'Dosis',sans-serif;
+	text-align: right;
+}
+
+.contactus h3 a, .contactus h3 a:visited{
+	text-decoration: none;
+	color:azure;
+}
+
+.contactus h3 a:hover{
+	text-decoration:underline;
+	color:#4E17FF;
+}
+
+.contactus-icon {
+	display: none;
+	width: 50%;
+}
+	
+.contactus-icon i{
+	padding-left: 1.2em;
+	font-size: 4em;
+	color: #fff;
+	background-color:#17171c;
+}
+
+.show-menu{
+	cursor: pointer;
+	display: none;
+	float: right;
+
+}
+
+.show-menu i{
+	padding-left: .2em;
+	padding-right: 1.2em;
+	font-size: 4em;
+	color: #fff;
+	background-color:#17171c;
+}
+
+/*hiding label and checkbox*/
+input[type=checkbox]{
+	display:none;
+}
+#menu {
+	background-color:#424242;
+	padding-top: .625em;
+	padding-bottom: .625em;
+	border-radius: .32em;
+	list-style-type:none;
+}
+
+#menu li{
+	display:inline-block;
+	font-family: 'Nunito', sans-serif;
+	
+}
+
+#menu li:first-child{
+	padding-left: 0.625em;
+	font-size: 110%;
+}
+
+#menu li a{
+	
+	margin-right: 1.25em;
+}
+#menu li a:link{
+	text-decoration: none;
+	color: #f8fbf8; 
+}
+#menu li a:visited{
+	color:azure;
+}
+
+#menu li a:hover{
+	color:#80ade3;
+}
+
+#menu li a.current{
+	color:#f8fbf8;
+	font-weight: bold;
+}
+
+.maincontent{
+	color: black;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	display: inline-block;
+	width: 100%;
+	
+}
+
+.maincontent h2{
+	text-align: center;
+}
+
+.content{
+	float:left;
+	width: 60%;
+	
+}
+.content h2{
+	text-align: center;
+	padding-top: 0.625em;
+	padding-bottom: 0.625em;
+}
+
+.content div{
+	box-sizing: border-box;
+	width: 50%;
+	float: left;
+	margin-bottom: 1.875em;
+	padding-right: 2em;
+	padding-left: 2em;
+}
+
+.content div img {
+	width: 100%;
+}
+
+.content h3{
+	text-align: center;
+	margin-bottom: 0.32em;
+	font-family: 'Dosis', sans-serif;
+}
+
+.sidebar{
+	box-sizing: border-box;
+	float: left;
+	width: 40%;
+	padding-left: 0.625em;
+	
+}
+
+.sidebar h2{
+	padding-top:1.25em;
+	padding-bottom: 0.625em;
+	text-align: center;
+}
+
+.sidebar p{
+	padding-top: 3.125em;
+	padding-right: 1.25em;
+}
+
+.aboutus-content{
+	float:left;
+	width: 50%;
+}
+
+.aboutus-sidebar{
+	float:left;
+	width: 50%;
+}
+
+.aboutus-sidebar h2, .aboutus-content h2{
+	padding: 1em 0;
+	
+}
+
+.aboutus-content p{
+	padding: 0 2em;
+}
+
+.aboutus-sidebar div {
+	box-sizing: border-box;
+	width: 100%;
+	margin-bottom: 1.875em;
+	padding-right: 2em;
+	padding-left: 2em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.aboutus-sidebar div img {
+	width: 100%;
+}
+
+.traiding-content{
+	float: left;
+	width: 60%;
+}
+
+.traiding-content h2 {
+	padding:1.25em 0;
+}
+.table {
+	box-sizing: border-box;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.table table{
+	
+	width: 100%;
+	margin-left:2em;
+}
+
+.traiding-content .table table tr td {
+	padding-bottom: 1em;
+	padding-right: .5em;
+}
+
+.cousines-content{
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.cousines-content div{
+	box-sizing: border-box;
+	width: 50%;
+	float: left;
+	padding: 2em 1em;
+}
+.cousines-content h2 {
+	text-align: center;
+	padding-top: 0.625em;
+	padding-bottom: 0.625em;
+}
+.cousines-content div h3 {
+	text-align: center;
+	padding-top: .625em;
+	padding-bottom: 0.625em;
+}
+
+.cousines-content div:nth-last-of-type(1){
+	box-sizing: border-box;
+	width: 50%;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+.cousines-content div img {
+	width: 100%;
+}
+
+.contactus-content {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contactus-content label {
+	float: left;
+	width: 6em;
+	text-align: right;
+	margin-right: 0.625em;
+}
+
+.submit {
+	margin-left: 8em;
+	padding: 0.2em;
+}
+
+.clearform {
+	padding: 0.2em;
+	margin-left: .5em;
+}
+
+.contactus-content form fieldset{
+	width: 50%;
+	max-width: 25em;
+	min-width: 20em;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fff;
+	border: solid .1em #3d7ff1;
+	margin-top: 1.25em;
+}
+.contactus-content legend {
+	font-family:'Dosis',sans-serif;
+	font-weight: bold;
+	background-color: #fff;
+	padding: .25em;
+}
+.contactus-content form fieldset p {
+	padding: 1em 0;
+}
+
+/* make iframe responsive*/
+.map-container {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;/* aspect ratio*/
+}
+ 
+.map-container iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.footer{
+	background-color:#424242;
+	color:white;
+	display: inline-block;
+	border-radius: 0.32em;
+	width: 100%;
+	font-family:'Nunito', sans-serif;
+}
+
+.footer h3, .footer h4{
+	text-align: center;
+}
+
+.icons{
+	padding-top: 0.625em;
+	padding-bottom: 1.25em;
+}
+
+.icons ul{
+	list-style-type: none;
+	text-align: center;
+	padding-top: .32em;
+}
+
+/* sets the margin between icons*/
+.icons li{
+	display:inline-block;
+	margin-right: 0.625em;
+}
+
+/* sets the margin of last of type to 0 to allow correct centering*/
+.icons li:nth-last-of-type(1){
+	margin-right: 0;
+	margin-bottom: .625em;
+}
+
+.icons a{
+	text-decoration: none;
+	color:azure;
+}
+
+
+/* responsive */
+/*  0 to 500 pixels  portrait orientation*/
+@media screen and (max-width: 31.25em/*500px*/)and  (orientation: portrait) {
+	h2 {
+		font-size: 3em;
+	}
+	
+	h3 {
+		font-size: 1.7em;
+	}
+	p {
+		font-size: 1.17em;
+	}
+	.contactus{
+		display: none;
+	}
+	.col1, .col2 {
+		width: 50%;
+		background-color:#17171c;
+	}
+	.col1{
+		float: left;
+	}
+	.col2{
+		float:right;
+	}
+	
+	.contactus-icon {
+		display: inline-block;
+	}
+	.logo {
+		width: 100%;
+	}
+	
+	
+	/*hides navigation bar*/
+	#menu {
+		display: none;
+	}
+	
+	/*displaying our list items as block element; if checkbox is check*/
+	input[type=checkbox]:checked ~ #menu {
+		display: block;
+		float: right;
+		width: 50%;
+	}
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:inline-block;
+    }
+	
+	#menu li {
+		display: block;
+		margin-bottom: 1em;
+		
+	}
+	
+	#menu li:first-child{
+		padding-left: 0;
+	}
+	
+	#menu li a {
+		padding-bottom: 2em;
+		margin-left: 3em;
+		
+	}
+	
+	.sidebar {
+		display: none;
+	}
+	.content {
+		width: 100%;
+	}
+	.content div {
+		width: 100%;
+	}
+	
+	.aboutus-content{
+		width: 100%;
+	}
+	
+	.aboutus-sidebar {
+		width: 100%;
+	}
+	
+	.cousines-content div{
+		width: 100%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.cousines-content div:nth-last-of-type(1){
+		width: 100%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.contactus-content label {
+		float: left;
+		width: 6em;
+		text-align: left;
+		margin-left: .3em;
+	}
+	
+	.input-element{
+		margin-left: .3em;
+	}
+	
+	.traiding-content {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.table {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+		
+}
+
+/*  0 to 500 pixels  landscape orientation*/
+@media screen and (max-width: 31.25em/*500px*/) and  (orientation: landscape) {
+	.maincontent h2 {
+		font-size: 3em;
+	}
+	
+	.maincontent h3 {
+		font-size: 1.5em;
+	}
+	p {
+		font-size: 1.17em;
+	}
+	.contactus{
+		display: none;
+	}
+	.col1, .col2 {
+		width: 50%;
+		background-color:#17171c;
+	}
+	.col1{
+		float: left;
+	}
+	.col2{
+		float:right;
+	}
+	
+	.contactus-icon {
+		display: inline-block;
+	}
+	.logo {
+		width: 100%;
+	}
+	
+	#menu {
+		display: none;
+	}
+	
+	input[type=checkbox]:checked ~ #menu {
+		display: block;
+		float: right;
+		width: 50%;
+	}
+	
+    .show-menu {
+        display:inline-block;
+    }
+	
+	#menu li {
+		display: block;
+		margin-bottom: 1em;
+		
+	}
+	
+	#menu li:first-child{
+		padding-left: 0;
+	}
+	
+	#menu li a {
+		padding-bottom: 2em;
+		margin-left: 3em;
+	}
+	
+	.sidebar {
+		display: none;
+	}
+	.content {
+		width: 100%;
+	}
+	
+	.traiding-content {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.table {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.aboutus-content{
+		width: 100%;
+	}
+	
+	.aboutus-sidebar {
+		width: 100%;
+	}
+	
+	.contactus-content label {
+		float: left;
+		width: 6em;
+		text-align: left;
+		margin-left: .3em;
+	}
+	
+	.input-element{
+		margin-left: .3em;
+	}
+	
+}
+
+/*500  to 900 pixels  portrait orientation*/
+@media screen and (min-width: 31.26em/*500px*/) and (max-width: 56.25em/*900px*/) and  (orientation: portrait) {
+	.maincontent h2 {
+		font-size: 3em;
+	}
+	
+	p {
+		font-size: 1.17em;
+	}
+	.logo {
+		width: 80%;
+	}
+	.contactus {
+		width: 20%;
+	}
+	.col1{
+		display: none;
+	}
+	
+	.col2 {
+		box-sizing: border-box;
+		width: 100%;
+		float:left;
+		background-color:#17171c;
+	}
+	
+	/*hides navigation bar*/
+	#menu {
+		display: none;
+	}
+	
+	/*displaying our list items as block element; if checkbox is check*/
+	input[type=checkbox]:checked ~ #menu {
+		display: block;
+		float: right;
+		width: 50%;
+	}
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:inline-block;
+    }
+	
+	#menu li {
+		display: block;
+		margin-bottom: 1em;
+		
+	}
+	
+	#menu li:first-child{
+		padding-left: 0;
+	}
+	
+	#menu li a {
+		padding-bottom: 2em;
+		margin-left: 3em;
+	}
+	
+	.content {
+		width: 100%;
+	}
+	
+	.sidebar {
+		width: 50%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.traiding-content{
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+	
+	.table {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.aboutus-content{
+		width: 100%;
+	}
+	
+	.aboutus-sidebar {
+		width: 100%;
+
+	}
+	
+	.contactus-content label {
+		float: left;
+		width: 6em;
+		text-align: left;
+		margin-left: .3em;
+	}
+	
+	.input-element{
+		margin-left: .3em;
+	}
+	
+}
+
+/*500  to 900 pixels  portrait orientation*/
+@media screen and (min-width: 31.26em/*500px*/) and (max-width: 56.25em/*900px*/) and  (orientation: landscape) {
+	
+	.maincontent h2 {
+		font-size: 3em;
+	}
+	
+	p {
+		font-size: 1.17em;
+	}
+	
+	.logo {
+		width: 80%;
+	}
+	
+	.contactus {
+		width: 20%;
+	}
+	.col1{
+		display: none;
+	}
+	
+	.col2 {
+		box-sizing: border-box;
+		width: 100%;
+		float:left;
+		background-color:#17171c;
+	}
+	
+	/*hides navigation bar*/
+	#menu {
+		display: none;
+	}
+	
+	/*displaying our list items as block element; if checkbox is check*/
+	input[type=checkbox]:checked ~ #menu {
+		display: block;
+		float: right;
+		width: 50%;
+	}
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:inline-block;
+    }
+	
+	#menu li {
+		display: block;
+		margin-bottom: 1em;
+		
+	}
+	
+	#menu li:first-child{
+		padding-left: 0;
+	}
+	
+	#menu li a {
+		padding-bottom: 2em;
+		margin-left: 3em;
+	}
+	
+	.content {
+		width: 100%;
+	}
+	
+	.sidebar {
+		width: 50%;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.traiding-content{
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+	
+	.table {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.aboutus-content{
+		width: 100%;
+	}
+	
+	.aboutus-sidebar {
+		width: 100%;
+
+	}
+	
+	.contactus-content label {
+		float: left;
+		width: 6em;
+		text-align: left;
+		margin-left: .3em;
+	}
+	
+	.input-element{
+		margin-left: .3em;
+	}
+	
+	.contactus-content label {
+		float: left;
+		width: 6em;
+		text-align: left;
+		margin-left: .3em;
+	}
+	
+	.input-element{
+		margin-left: .3em;
+	}
+	
+}

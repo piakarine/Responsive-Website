@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta chartset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Contact Us</title>
+		<link href="SES-reponsive.css" rel="stylesheet" type="text/css" />
+		<!-- imports the fonts to be used-->
+		<link href="https://fonts.googleapis.com/css?family=Dosis|Nunito|Roboto" rel="stylesheet">
+		<!-- imports the icons for social media to be used-->
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	</head>
+	
+	<body>
+		<div  id="wrapper">
+		 <!-- header content-->
+			<header>
+				<a href="index.html"><img src="images/Logo.jpg" alt="south-eat street logo" class="logo"></a>
+				<div class="contactus">
+					<h3><a href="mailto:info@south-eatstreet.com">info@south-eatstreet.com</a><br>
+					Ph: (07) 3456 9435<br>
+					<a href="contactus.html">Contact Us</a></h3>	
+				</div>
+				<div class="clear"></div>
+			</header>
+				<div class="col1">
+				<a href="contactus.html" class="contactus-icon"><i class="fa fa-phone" aria-hidden="true"></i></a>
+				</div>
+				<div class="col2">
+				<label for="show-menu" class="show-menu"><i class="fa fa-bars" aria-hidden="true"></i></label>
+				</div>
+				<input type="checkbox" id="show-menu">
+				<ul id="menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="aboutus.html" >About Us</a></li>
+					<li><a href="chinesefood.html">Chinese</a></li>
+					<li><a href="indianfood.html" >Indian</a></li>
+					<li><a href="japanesefood.html">Japanese</a></li>
+					<li><a href="mexicanfood.html">Mexican</a></li>
+					<li><a href="traidinghours.html">Trading Hours</a></li>
+				</ul>
+			
+			<!-- main content -->
+			<div class="maincontent">
+				<div class="contactus-content">
+					<h2>Contact Us</h2>
+					<form action="" method="post">
+						<fieldset>
+							<legend>Give us some feedback</legend>
+							<p>
+								<label for="Name">Name:</label>
+								<input class="input-element" type="text" name="name" id="First Name" size="35" maxlength="35">
+							</p>
+							<p>
+								<label for="Age">Age:</label>
+								<input class="input-element" type="number" min = "0" max="110" name="age" id="Age" size="3" maxlength="35">
+							</p>
+							<p>
+								<label>Gender:</label>
+								<select name="gender">
+									<option value="female">Female</option>
+									<option value="male">Male</option>
+									<option value="neutral">Neutral</option>
+								</select>
+							</p>
+							<p>
+								<label for="Country">Country of origin:</label>
+								<input class="input-element" type="text" name="country" id="Country" size="35" maxlength="35">
+							</p>
+							<p>
+								<label>Personal Interest:</label>
+								<textarea class="input-element" name="interest" rows="5" cols="37">
+								Type your personal interest here...
+								</textarea>
+							</p>
+							<p>
+								<label>Comments:</label>
+								<textarea class="input-element" name="comments" rows="5" cols="37">
+								Type your comments here...
+								</textarea>
+							</p>
+							<p>
+								<input class="submit" type="submit" value="Submit"> 
+								<input class="clearform"type="reset" value="Clear form"> 
+							</p>
+							
+						</fieldset>
+					</form>
+					
+						
+				</div>
+			</div>
+			
+			<!--Footer that uses icons to link to social media -->
+			<div class="footer">
+				<div class="icons">
+					<h3>Follow us</h3>
+					<ul>
+						<li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						</li>
+						<li><a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						</li>
+						<li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						</li>
+					</ul>
+					<h4>Copyrights © 2017. Brisbane QLD</h4>
+					<h4>All rights reserved</h4>
+				</div>
+			</div>
+	</body>
+</html>
